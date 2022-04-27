@@ -1,0 +1,60 @@
+clear all;
+phi = 0:0.01:2*pi;
+lambda = 1;
+beta = 2*pi/lambda;
+d = lambda/8;
+delta = 0;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,1);
+polar(phi,E);
+
+delta = pi/4;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,2);
+polar(phi,E);
+
+delta = pi/2;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,3);
+polar(phi,E);
+
+d = lambda/4;
+delta = 0;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,4);
+polar(phi,E);
+
+delta = pi/4;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,5);
+polar(phi,E);
+
+delta = pi/2;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,6);
+polar(phi,E);
+
+d = lambda/2;
+delta = 0;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,7);
+polar(phi,E);
+
+delta = pi/4;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,8);
+polar(phi,E);
+
+delta = pi/2;
+psi = beta*d.*cos(phi)+delta;
+E = abs(cos(psi/2));
+subplot(3,3,9);
+polar(phi,E);
